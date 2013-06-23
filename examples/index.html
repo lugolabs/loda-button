@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loda</title>
+
+	<link rel="stylesheet" href="icomon/style.css" />
+	<link rel="stylesheet" href="../loda-button.css" />
+
+	<style type="text/css">
+		body {
+			font-size: 100%;
+			margin:    1em 5em 5em;
+  		font-family: 'Lucida Grande', sans-serif;
+  		text-align: center;
+		}
+
+		h1 {
+			margin-top: 1.2em;
+			margin-bottom:  0;
+			padding-bottom: 0;
+		}
+
+		h2 {
+			font-size: 1em;
+			color:     #888;
+			margin:    0 0 4em;
+			padding:   0;
+		}
+
+		.logo {
+  		margin-top: 0;
+  	}
+
+  	.logo a, .logo a:link, .logo a:visited {
+  		color: #aaa;
+  		font-size: .4em;
+  		font-weight: normal;
+  		text-decoration: none;
+  		text-transform: uppercase;
+  		letter-spacing: 1em;
+  		transition: all .5s;
+  	}
+
+  	.logo a:hover {
+  		color: #000;
+  	}
+
+  	.loda-btn {
+  		margin: 0 2em 2em 0;
+  	}
+
+  	.container {
+  		max-width: 50em;
+  		margin: 0 auto;
+  	}
+		
+	</style>
+</head>
+<body>
+	<h3 class="logo"><a href="http://www.lugolabs.com">Lugo Labs</a></h3>
+	<h1>loda-button</h1>
+	<h2>jQuery plugin that animates the button icon with CCS3 when loading ...</h2>
+
+	<div class="container">		
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-lock"></span>
+			Lock
+		</a>
+
+		<a href = "#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-drawer"></span> Archive
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-upload"></span> Upload
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-download"></span> Download
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-connection"></span> Connect
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-user"></span> User
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-search"></span> Search
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-phone"></span>
+			Phone
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-star"></span>
+			Star
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-remove"></span>
+			Remove
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-mail"></span>
+			Mail
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-flickr"></span>
+			Flickr
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-share"></span>
+			Share
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-file-pdf"></span>
+			PDF
+		</a>
+
+		<a href="#" class="loda-btn">
+			<span aria-hidden="true" class="loda-icon icon-disk"></span>
+			Save
+		</a>
+
+	</div>
+	
+
+
+	<script type="text/javascript" src="../vendor/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="../loda-button.js"></script>
+
+	<script type="text/javascript">
+
+		$('.loda-btn')
+			.lodaButton()
+
+			.click(function(e) {
+
+				e.preventDefault();
+
+				var _self = $(this);
+				_self.lodaButton('start');
+
+				setTimeout(function() {
+					_self.lodaButton('stop');
+				}, 2000);
+
+			});
+
+	</script>
+
+</body>
+</html>
