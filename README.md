@@ -1,4 +1,4 @@
-loda
+loda-button
 ---
 
-A jQuery plugin that animates the buttons with icon; can be used to hint loading. It uses CSS3 animations.
+jQuery plugin that animates the button icon with CCS3 when loading ...
