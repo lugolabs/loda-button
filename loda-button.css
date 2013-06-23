@@ -1,7 +1,7 @@
+/* OVERRIDABLE */
+
 .loda-btn, .loda-btn:visited {
-  position:              relative;
   background:            #E5E6E6;
-  display:               inline-block;
   text-decoration:       none;
   color:                 #FF7676;
   padding:               1em 1em 1em 2.6em;
@@ -22,9 +22,20 @@
 }
 
 .loda-btn .loda-icon {
-	position: absolute;
   top: 1em;
   left: 1em;
+}
+
+/* NOT OVERRIDABLE */
+
+.loda-btn, .loda-btn:visited {
+  position:              relative;
+  display:               inline-block;
+}
+
+.loda-btn .loda-icon {
+	position: absolute;
+
 	-webkit-transition: -webkit-transform .3s;
      -moz-transition: -moz-transform .3s;
        -o-transition: -o-transform .3s;
