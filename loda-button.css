@@ -56,6 +56,11 @@
   to { -webkit-transform: rotateY(179deg); }
 }
 
+@-moz-keyframes loda-anim {
+  from { -moz-transform: rotateY(1deg); }
+  to { -moz-transform: rotateY(179deg); }
+}
+
 @-webkit-keyframes loda-anim {
   from { -webkit-transform: rotateY(1deg); }
   to { -webkit-transform: rotateY(179deg); }
